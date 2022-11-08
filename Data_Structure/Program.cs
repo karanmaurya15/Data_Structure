@@ -10,7 +10,7 @@
             ln.Add(56);
             ln.Add(30);
             ln.Add(70);
-            ln.RemoveFirstNode();
+            ln.RemoveLastNode();
             Console.WriteLine("After removing is : ");
             ln.Display();
             
