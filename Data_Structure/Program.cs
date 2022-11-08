@@ -10,10 +10,11 @@
             ln.Add(56);
             ln.Add(30);
             ln.Add(70);
-            int search = ln.Search(30);
-           
-            ln.InsertAtParticularPosition(3,40);
+            int search = ln.Search(40);
+
+            ln.InsertAtParticularPosition(3, 40);
             ln.Display();
+            ln.DeleteNodeAtParticularPosition(3);
 
         }
     }
