@@ -27,6 +27,20 @@ namespace Data_Structure
             }
             Console.WriteLine("{0} Inserted into Linked List", node.data);
         }
+        internal void AddInReverseOrder(int data)
+        {
+            Node newNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newNode;
+            }
+            else
+            {
+                Node temp = this.head;
+                head = newNode;
+                head.next = temp;
+            }
+        }
 
         internal void Display()
         {
@@ -59,7 +73,7 @@ namespace Data_Structure
             }
             Node prev = null;
             Node current = this.head;
-            int count = 0;
+            int count = 1;
             while (current != null && count < position)
             {
                 prev = current;
@@ -101,13 +115,12 @@ namespace Data_Structure
         internal int Search(int value)
         {
             Node node = this.head;
-            int count = 1;
+            int count = 0;
             while (node != null)
             {
 
                 if (node.data == value)
                 {
-                    Console.WriteLine($"\nThe {value} is at Node : " + count);
                     return count;
                 }
                 node = node.next;
