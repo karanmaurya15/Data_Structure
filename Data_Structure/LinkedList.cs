@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Data_Structure
+﻿namespace Data_Structure
 {
     internal class LinkedList
     {
+
         internal Node head;
         internal void Add(int data)
         {
@@ -27,6 +22,7 @@ namespace Data_Structure
             }
             Console.WriteLine("{0} Inserted into Linked List", node.data);
         }
+
         internal void AddInReverseOrder(int data)
         {
             Node newNode = new Node(data);
@@ -41,7 +37,6 @@ namespace Data_Structure
                 head.next = temp;
             }
         }
-
         internal void Display()
         {
             Node temp = this.head;
@@ -92,7 +87,6 @@ namespace Data_Structure
             }
             this.head = this.head.next;
             return this.head;
-
         }
         internal Node RemoveLastNode()
         {
@@ -171,6 +165,6 @@ namespace Data_Structure
             }
             Console.WriteLine("\nLength of LinkedList is :-" + " " + count);
         }
-    }
 
+    }
 }
