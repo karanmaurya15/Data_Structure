@@ -11,8 +11,7 @@
             ln.Add(56);
             ln.Add(40);
             ln.Add(70);
-            int search = ln.Search(50);
-
+          
             ln.InsertAtParticularPosition(3, 50);
             ln.Display();
             ln.DeleteNodeAtParticularPosition(3);
